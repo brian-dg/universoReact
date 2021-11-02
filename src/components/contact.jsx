@@ -97,10 +97,10 @@ export const Contact = (props) => {
           </div>
           <div className='col-md-3 col-md-offset-1 contact-info'>
             <div className='contact-item'>
-              <h3>Contact Info</h3>
+              <h3>Contacto</h3>
               <p>
                 <span>
-                  <i className='fa fa-map-marker'></i> Address
+                  <i className='fa fa-map-marker'></i> Direccion
                 </span>
                 {props.data ? props.data.address : 'loading'}
               </p>
@@ -108,7 +108,7 @@ export const Contact = (props) => {
             <div className='contact-item'>
               <p>
                 <span>
-                  <i className='fa fa-phone'></i> Phone
+                  <i className='fa fa-phone'></i> Cel:
                 </span>{' '}
                 {props.data ? props.data.phone : 'loading'}
               </p>
@@ -127,8 +127,8 @@ export const Contact = (props) => {
               <div className='social'>
                 <ul>
                   <li>
-                    <a href={props.data ? props.data.facebook : '/'}>
-                      <i className='fa fa-facebook'></i>
+                    <a href={props.data ? props.data.facebook : ''} target="_blank">
+                      <i className='fa fa-facebook' ></i>
                     </a>
                   </li>
                   <li>
